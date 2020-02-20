@@ -1,0 +1,54 @@
+import org.apache.tools.ant.filters.*
+
+buildscript {
+    ext {
+        springBootVersion = '1.4.1.RELEASE'
+    }
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+version = '2.0.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'spring-boot'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+
+jar {
+    baseName = 'fitnessjiffy-spring'
+    version =  version
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile ('org.springframework.boot:spring-boot-starter-thymeleaf') {
+        exclude module: 'spring-boot-starter-tomcat'
+    }
+    compile 'org.springframework.boot:spring-boot-starter-undertow'
+    compile 'io.jsonwebtoken:jjwt:0.7.0'
+    compile 'de.svenkubiak:jBCrypt:0.4.1'
+    compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+    compile 'mysql:mysql-connector-java:6.0.5'
+    compile 'org.flywaydb:flyway-core:4.0.3'
+
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
+    testCompile 'com.h2database:h2:1.4.193'
+}
+
+processResources {
+    filter ReplaceTokens, tokens: [
+            "application.version": project.property("version")
+    ]
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.1'
+}
