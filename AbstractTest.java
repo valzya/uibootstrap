@@ -1,6 +1,6 @@
-package com.steveperkins.fitnessjiffy.test;
+package com.vb.fitnessapp.test;
 
-import com.steveperkins.fitnessjiffy.service.ReportDataService;
+import com.vb.fitnessapp.service.ReportDataService;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.runner.RunWith;
