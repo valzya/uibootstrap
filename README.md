@@ -111,4 +111,3 @@ Fitnessapp schedules a background thread to update that user's report data for t
 affected data range. This thread is scheduled to run after a five-minute delay, to
 avoid unnecessary duplication when the user makes multiple changes within a short period
 of time.
-
