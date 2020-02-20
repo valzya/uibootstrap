@@ -1,21 +1,21 @@
-package com.steveperkins.fitnessjiffy.test;
+package com.vb.fitnessapp.test;
 
-import com.steveperkins.fitnessjiffy.domain.ReportData;
-import com.steveperkins.fitnessjiffy.domain.User;
-import com.steveperkins.fitnessjiffy.dto.ExerciseDTO;
-import com.steveperkins.fitnessjiffy.dto.ExercisePerformedDTO;
-import com.steveperkins.fitnessjiffy.dto.FoodDTO;
-import com.steveperkins.fitnessjiffy.dto.FoodEatenDTO;
-import com.steveperkins.fitnessjiffy.dto.ReportDataDTO;
-import com.steveperkins.fitnessjiffy.dto.UserDTO;
-import com.steveperkins.fitnessjiffy.dto.converter.UserToUserDTO;
-import com.steveperkins.fitnessjiffy.repository.FoodRepository;
-import com.steveperkins.fitnessjiffy.repository.ReportDataRepository;
-import com.steveperkins.fitnessjiffy.repository.UserRepository;
-import com.steveperkins.fitnessjiffy.service.ExerciseService;
-import com.steveperkins.fitnessjiffy.service.FoodService;
-import com.steveperkins.fitnessjiffy.service.ReportDataService;
-import com.steveperkins.fitnessjiffy.service.UserService;
+import com.vb.fitnessapp.domain.ReportData;
+import com.vb.fitnessapp.domain.User;
+import com.vb.fitnessapp.dto.ExerciseDTO;
+import com.vb.fitnessapp.dto.ExercisePerformedDTO;
+import com.vb.fitnessapp.dto.FoodDTO;
+import com.vb.fitnessapp.dto.FoodEatenDTO;
+import com.vb.fitnessapp.dto.ReportDataDTO;
+import com.vb.fitnessapp.dto.UserDTO;
+import com.vb.fitnessapp.dto.converter.UserToUserDTO;
+import com.vb.fitnessapp.repository.FoodRepository;
+import com.vb.fitnessapp.repository.ReportDataRepository;
+import com.vb.fitnessapp.repository.UserRepository;
+import com.vb.fitnessapp.service.ExerciseService;
+import com.vb.fitnessapp.service.FoodService;
+import com.vb.fitnessapp.service.ReportDataService;
+import com.vb.fitnessapp.service.UserService;
 import org.junit.Test;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,7 +38,7 @@ public class ServiceTest extends AbstractTest {
 
     @Autowired
     private FoodService foodService;
-
+fitnessapp
     @Autowired
     private ExerciseService exerciseService;
 
