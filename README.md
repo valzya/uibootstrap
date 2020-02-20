@@ -94,7 +94,7 @@ is all transparent to the user.
 <a href="https://github.com/vb/Fitnessapp-spring/raw/screenshots/screenshots/food-create.png"><img src="https://github.com/vb/Fitnessapp-spring/raw/screenshots/screenshots/food-create-thumbnail.png"/></a>
 
 The database includes comprehensive data on over 800 exercises, taken from the 
-[2011 Compendium of Physical Activities](https://sites.google.com/site/compendiumofphysicalactivities/).  By using the 
+[2020 Compendium of Physical Activities](https://sites.google.com/site/compendiumofphysicalactivities/).  By using the 
 user's weight on the date when an exercise was performed, Fitnessapp can calculate
 how many calories were burned by that particular user.
 
