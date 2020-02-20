@@ -1,4 +1,4 @@
-package com.steveperkins.fitnessjiffy.test;
+package com.vb.fitnessapp.test;
 
 import java.sql.Date;
 import java.sql.Timestamp;
@@ -13,19 +13,19 @@ import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertNotNull;
 import static junit.framework.TestCase.assertNull;
 
-import com.steveperkins.fitnessjiffy.domain.Exercise;
-import com.steveperkins.fitnessjiffy.domain.ExercisePerformed;
-import com.steveperkins.fitnessjiffy.domain.Food;
-import com.steveperkins.fitnessjiffy.domain.FoodEaten;
-import com.steveperkins.fitnessjiffy.domain.ReportData;
-import com.steveperkins.fitnessjiffy.domain.User;
-import com.steveperkins.fitnessjiffy.domain.Weight;
-import com.steveperkins.fitnessjiffy.repository.ExercisePerformedRepository;
-import com.steveperkins.fitnessjiffy.repository.FoodEatenRepository;
-import com.steveperkins.fitnessjiffy.repository.FoodRepository;
-import com.steveperkins.fitnessjiffy.repository.ReportDataRepository;
-import com.steveperkins.fitnessjiffy.repository.UserRepository;
-import com.steveperkins.fitnessjiffy.repository.WeightRepository;
+import com.vb.fitnessapp.domain.Exercise;
+import com.vb.fitnessapp.domain.ExercisePerformed;
+import com.vb.fitnessapp.domain.Food;
+import com.vb.fitnessapp.domain.FoodEaten;
+import com.vb.fitnessapp.domain.ReportData;
+import com.vb.fitnessapp.domain.User;
+import com.vb.fitnessapp.domain.Weight;
+import com.vb.fitnessapp.repository.ExercisePerformedRepository;
+import com.vb.fitnessapp.repository.FoodEatenRepository;
+import com.vb.fitnessapp.repository.FoodRepository;
+import com.vb.fitnessapp.repository.ReportDataRepository;
+import com.vb.fitnessapp.repository.UserRepository;
+import com.vb.fitnessapp.repository.WeightRepository;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
